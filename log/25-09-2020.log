@@ -1,0 +1,561 @@
+25-Sep-20 01:33:09 - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+25-Sep-20 01:33:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/ping HTTP/1.1" 200 2
+25-Sep-20 01:33:29 - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+25-Sep-20 01:33:29 - DEBUG - https://api.binance.com:443 "GET /api/v1/ping HTTP/1.1" 200 2
+25-Sep-20 01:33:29 - DEBUG - GET HISTORICAL PRICES - starting job ...
+25-Sep-20 01:33:29 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 01:33:29 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 01:33:29 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 01:33:29 - ERROR - GET HISTORICAL PRICES - exception occurred!
+Traceback (most recent call last):
+  File "D:\Documents\Projects\Trading\AI Freak\src\getHistory.py", line 35, in get_historical_prices
+    logging.debug('GET HISTORICAL PRICES - Earliest valid timestamp is ' + datetime.datetime.fromtimestamp(timestamp/1000))
+TypeError: can only concatenate str (not "datetime.datetime") to str
+25-Sep-20 01:36:37 - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+25-Sep-20 01:36:37 - DEBUG - https://api.binance.com:443 "GET /api/v1/ping HTTP/1.1" 200 2
+25-Sep-20 01:36:37 - DEBUG - GET HISTORICAL PRICES - starting job ...
+25-Sep-20 01:36:37 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 01:36:37 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 01:36:37 - DEBUG - GET HISTORICAL PRICES - Earliest valid timestamp is 08-17-2017 06:00:00
+25-Sep-20 01:36:37 - DEBUG - GET HISTORICAL PRICES - Fetching bars ...
+25-Sep-20 01:36:38 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 01:36:38 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1502942400000&symbol=BTCUSDT HTTP/1.1" 200 31029
+25-Sep-20 01:36:38 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1504767600000&symbol=BTCUSDT HTTP/1.1" 200 30932
+25-Sep-20 01:36:38 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1506567600000&symbol=BTCUSDT HTTP/1.1" 200 30909
+25-Sep-20 01:36:40 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1508367600000&symbol=BTCUSDT HTTP/1.1" 200 31641
+25-Sep-20 01:36:40 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1510167600000&symbol=BTCUSDT HTTP/1.1" 200 32523
+25-Sep-20 01:36:41 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1511967600000&symbol=BTCUSDT HTTP/1.1" 200 33444
+25-Sep-20 01:36:42 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1513767600000&symbol=BTCUSDT HTTP/1.1" 200 30241
+25-Sep-20 01:36:43 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1515571200000&symbol=BTCUSDT HTTP/1.1" 200 30257
+25-Sep-20 01:36:44 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1517371200000&symbol=BTCUSDT HTTP/1.1" 200 30487
+25-Sep-20 01:36:45 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1519286400000&symbol=BTCUSDT HTTP/1.1" 200 30146
+25-Sep-20 01:36:46 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1521086400000&symbol=BTCUSDT HTTP/1.1" 200 30035
+25-Sep-20 01:36:47 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1522886400000&symbol=BTCUSDT HTTP/1.1" 200 29743
+25-Sep-20 01:36:49 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1524686400000&symbol=BTCUSDT HTTP/1.1" 200 29877
+25-Sep-20 01:36:49 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1526486400000&symbol=BTCUSDT HTTP/1.1" 200 29699
+25-Sep-20 01:36:49 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1528286400000&symbol=BTCUSDT HTTP/1.1" 200 29813
+25-Sep-20 01:36:51 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1530126000000&symbol=BTCUSDT HTTP/1.1" 200 29751
+25-Sep-20 01:36:51 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1531951200000&symbol=BTCUSDT HTTP/1.1" 200 30037
+25-Sep-20 01:36:52 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1533751200000&symbol=BTCUSDT HTTP/1.1" 200 30026
+25-Sep-20 01:36:53 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1535551200000&symbol=BTCUSDT HTTP/1.1" 200 29794
+25-Sep-20 01:36:53 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1537351200000&symbol=BTCUSDT HTTP/1.1" 200 29449
+25-Sep-20 01:36:53 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1539151200000&symbol=BTCUSDT HTTP/1.1" 200 29081
+25-Sep-20 01:36:55 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1540962000000&symbol=BTCUSDT HTTP/1.1" 200 29224
+25-Sep-20 01:36:55 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1542787200000&symbol=BTCUSDT HTTP/1.1" 200 30247
+25-Sep-20 01:36:56 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1544587200000&symbol=BTCUSDT HTTP/1.1" 200 29872
+25-Sep-20 01:36:58 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1546387200000&symbol=BTCUSDT HTTP/1.1" 200 29339
+25-Sep-20 01:36:58 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1548187200000&symbol=BTCUSDT HTTP/1.1" 200 28971
+25-Sep-20 01:36:58 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1549987200000&symbol=BTCUSDT HTTP/1.1" 200 29443
+25-Sep-20 01:37:00 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1551787200000&symbol=BTCUSDT HTTP/1.1" 200 29147
+25-Sep-20 01:37:00 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1553608800000&symbol=BTCUSDT HTTP/1.1" 200 29738
+25-Sep-20 01:37:00 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1555408800000&symbol=BTCUSDT HTTP/1.1" 200 29628
+25-Sep-20 01:37:01 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1557208800000&symbol=BTCUSDT HTTP/1.1" 200 30653
+25-Sep-20 01:37:02 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1559044800000&symbol=BTCUSDT HTTP/1.1" 200 30430
+25-Sep-20 01:37:02 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1560844800000&symbol=BTCUSDT HTTP/1.1" 200 31272
+25-Sep-20 01:37:03 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1562644800000&symbol=BTCUSDT HTTP/1.1" 200 30969
+25-Sep-20 01:37:03 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1564444800000&symbol=BTCUSDT HTTP/1.1" 200 30643
+25-Sep-20 01:37:04 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1566273600000&symbol=BTCUSDT HTTP/1.1" 200 30431
+25-Sep-20 01:37:05 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1568073600000&symbol=BTCUSDT HTTP/1.1" 200 30352
+25-Sep-20 01:37:05 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1569873600000&symbol=BTCUSDT HTTP/1.1" 200 30104
+25-Sep-20 01:37:05 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1571673600000&symbol=BTCUSDT HTTP/1.1" 200 30622
+25-Sep-20 01:37:07 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1573473600000&symbol=BTCUSDT HTTP/1.1" 200 30530
+25-Sep-20 01:37:07 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1575288000000&symbol=BTCUSDT HTTP/1.1" 200 30119
+25-Sep-20 01:37:07 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1577088000000&symbol=BTCUSDT HTTP/1.1" 200 30278
+25-Sep-20 01:37:08 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1578888000000&symbol=BTCUSDT HTTP/1.1" 200 30486
+25-Sep-20 01:37:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1580688000000&symbol=BTCUSDT HTTP/1.1" 200 30613
+25-Sep-20 01:37:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1582509600000&symbol=BTCUSDT HTTP/1.1" 200 30890
+25-Sep-20 01:37:10 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1584313200000&symbol=BTCUSDT HTTP/1.1" 200 31070
+25-Sep-20 01:37:10 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1586113200000&symbol=BTCUSDT HTTP/1.1" 200 30507
+25-Sep-20 01:37:11 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1587920400000&symbol=BTCUSDT HTTP/1.1" 200 30993
+25-Sep-20 01:37:12 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1589720400000&symbol=BTCUSDT HTTP/1.1" 200 30525
+25-Sep-20 01:37:12 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1591520400000&symbol=BTCUSDT HTTP/1.1" 200 30309
+25-Sep-20 01:37:12 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1593331200000&symbol=BTCUSDT HTTP/1.1" 200 29902
+25-Sep-20 01:37:14 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1595131200000&symbol=BTCUSDT HTTP/1.1" 200 30638
+25-Sep-20 01:37:14 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1596931200000&symbol=BTCUSDT HTTP/1.1" 200 30605
+25-Sep-20 01:37:14 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1598731200000&symbol=BTCUSDT HTTP/1.1" 200 30753
+25-Sep-20 01:37:15 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1600531200000&symbol=BTCUSDT HTTP/1.1" 200 8001
+25-Sep-20 01:37:15 - DEBUG - GET HISTORICAL PRICES - Bars fetched successfully, converting to dataframe ...
+25-Sep-20 01:37:16 - DEBUG - GET HISTORICAL PRICES - Converted successfully, setting index ...
+25-Sep-20 01:37:16 - DEBUG - GET HISTORICAL PRICES - Index is set, converting index to human-readable date ...
+25-Sep-20 01:37:16 - DEBUG - GET HISTORICAL PRICES - Converted successfully, exporting to csv ....
+25-Sep-20 01:37:16 - DEBUG - GET HISTORICAL PRICES - Data exported successfully!
+25-Sep-20 01:37:16 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 01:37:16 - DEBUG - GET HISTORICAL PRICES - completed successfully!
+25-Sep-20 01:38:48 - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+25-Sep-20 01:38:49 - DEBUG - https://api.binance.com:443 "GET /api/v1/ping HTTP/1.1" 200 2
+25-Sep-20 01:38:49 - DEBUG - GET HISTORICAL PRICES - starting job ...
+25-Sep-20 01:38:49 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 01:38:49 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 01:38:49 - DEBUG - GET HISTORICAL PRICES - Earliest valid timestamp is 08-17-2017 06:00:00
+25-Sep-20 01:38:49 - DEBUG - GET HISTORICAL PRICES - Fetching bars ...
+25-Sep-20 01:38:49 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 01:38:49 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1502942400000&symbol=BTCUSDT HTTP/1.1" 200 31029
+25-Sep-20 01:38:50 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1504767600000&symbol=BTCUSDT HTTP/1.1" 200 30932
+25-Sep-20 01:38:50 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1506567600000&symbol=BTCUSDT HTTP/1.1" 200 30909
+25-Sep-20 01:38:52 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1508367600000&symbol=BTCUSDT HTTP/1.1" 200 31641
+25-Sep-20 01:38:52 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1510167600000&symbol=BTCUSDT HTTP/1.1" 200 32523
+25-Sep-20 01:38:53 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1511967600000&symbol=BTCUSDT HTTP/1.1" 200 33444
+25-Sep-20 01:38:55 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1513767600000&symbol=BTCUSDT HTTP/1.1" 200 30241
+25-Sep-20 01:38:55 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1515571200000&symbol=BTCUSDT HTTP/1.1" 200 30257
+25-Sep-20 01:38:56 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1517371200000&symbol=BTCUSDT HTTP/1.1" 200 30487
+25-Sep-20 01:38:58 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1519286400000&symbol=BTCUSDT HTTP/1.1" 200 30146
+25-Sep-20 01:38:58 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1521086400000&symbol=BTCUSDT HTTP/1.1" 200 30035
+25-Sep-20 01:38:58 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1522886400000&symbol=BTCUSDT HTTP/1.1" 200 29743
+25-Sep-20 01:39:00 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1524686400000&symbol=BTCUSDT HTTP/1.1" 200 29877
+25-Sep-20 01:39:00 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1526486400000&symbol=BTCUSDT HTTP/1.1" 200 29699
+25-Sep-20 01:39:01 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1528286400000&symbol=BTCUSDT HTTP/1.1" 200 29813
+25-Sep-20 01:39:03 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1530126000000&symbol=BTCUSDT HTTP/1.1" 200 29751
+25-Sep-20 01:39:03 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1531951200000&symbol=BTCUSDT HTTP/1.1" 200 30037
+25-Sep-20 01:39:03 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1533751200000&symbol=BTCUSDT HTTP/1.1" 200 30026
+25-Sep-20 01:39:05 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1535551200000&symbol=BTCUSDT HTTP/1.1" 200 29794
+25-Sep-20 01:39:05 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1537351200000&symbol=BTCUSDT HTTP/1.1" 200 29449
+25-Sep-20 01:39:05 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1539151200000&symbol=BTCUSDT HTTP/1.1" 200 29081
+25-Sep-20 01:39:07 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1540962000000&symbol=BTCUSDT HTTP/1.1" 200 29224
+25-Sep-20 01:39:07 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1542787200000&symbol=BTCUSDT HTTP/1.1" 200 30247
+25-Sep-20 01:39:08 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1544587200000&symbol=BTCUSDT HTTP/1.1" 200 29872
+25-Sep-20 01:39:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1546387200000&symbol=BTCUSDT HTTP/1.1" 200 29339
+25-Sep-20 01:39:10 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1548187200000&symbol=BTCUSDT HTTP/1.1" 200 28971
+25-Sep-20 01:39:10 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1549987200000&symbol=BTCUSDT HTTP/1.1" 200 29443
+25-Sep-20 01:39:11 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1551787200000&symbol=BTCUSDT HTTP/1.1" 200 29147
+25-Sep-20 01:39:11 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1553608800000&symbol=BTCUSDT HTTP/1.1" 200 29738
+25-Sep-20 01:39:12 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1555408800000&symbol=BTCUSDT HTTP/1.1" 200 29628
+25-Sep-20 01:39:13 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1557208800000&symbol=BTCUSDT HTTP/1.1" 200 30653
+25-Sep-20 01:39:13 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1559044800000&symbol=BTCUSDT HTTP/1.1" 200 30430
+25-Sep-20 01:39:13 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1560844800000&symbol=BTCUSDT HTTP/1.1" 200 31272
+25-Sep-20 01:39:15 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1562644800000&symbol=BTCUSDT HTTP/1.1" 200 30969
+25-Sep-20 01:39:15 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1564444800000&symbol=BTCUSDT HTTP/1.1" 200 30643
+25-Sep-20 01:39:15 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1566273600000&symbol=BTCUSDT HTTP/1.1" 200 30431
+25-Sep-20 01:39:17 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1568073600000&symbol=BTCUSDT HTTP/1.1" 200 30352
+25-Sep-20 01:39:17 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1569873600000&symbol=BTCUSDT HTTP/1.1" 200 30104
+25-Sep-20 01:39:18 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1571673600000&symbol=BTCUSDT HTTP/1.1" 200 30622
+25-Sep-20 01:39:19 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1573473600000&symbol=BTCUSDT HTTP/1.1" 200 30530
+25-Sep-20 01:39:20 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1575288000000&symbol=BTCUSDT HTTP/1.1" 200 30119
+25-Sep-20 01:39:20 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1577088000000&symbol=BTCUSDT HTTP/1.1" 200 30278
+25-Sep-20 01:39:21 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1578888000000&symbol=BTCUSDT HTTP/1.1" 200 30486
+25-Sep-20 01:39:22 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1580688000000&symbol=BTCUSDT HTTP/1.1" 200 30613
+25-Sep-20 01:39:23 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1582509600000&symbol=BTCUSDT HTTP/1.1" 200 30890
+25-Sep-20 01:39:24 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1584313200000&symbol=BTCUSDT HTTP/1.1" 200 31070
+25-Sep-20 01:39:24 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1586113200000&symbol=BTCUSDT HTTP/1.1" 200 30507
+25-Sep-20 01:39:24 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1587920400000&symbol=BTCUSDT HTTP/1.1" 200 30993
+25-Sep-20 01:39:26 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1589720400000&symbol=BTCUSDT HTTP/1.1" 200 30525
+25-Sep-20 01:39:26 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1591520400000&symbol=BTCUSDT HTTP/1.1" 200 30309
+25-Sep-20 01:39:26 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1593331200000&symbol=BTCUSDT HTTP/1.1" 200 29902
+25-Sep-20 01:39:27 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1595131200000&symbol=BTCUSDT HTTP/1.1" 200 30638
+25-Sep-20 01:39:28 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1596931200000&symbol=BTCUSDT HTTP/1.1" 200 30605
+25-Sep-20 01:39:28 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1598731200000&symbol=BTCUSDT HTTP/1.1" 200 30753
+25-Sep-20 01:39:29 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1600531200000&symbol=BTCUSDT HTTP/1.1" 200 8003
+25-Sep-20 01:39:29 - DEBUG - GET HISTORICAL PRICES - Bars fetched successfully, converting to dataframe ...
+25-Sep-20 01:39:29 - DEBUG - GET HISTORICAL PRICES - Converted successfully, setting index ...
+25-Sep-20 01:39:29 - DEBUG - GET HISTORICAL PRICES - Index is set, converting index to human-readable date ...
+25-Sep-20 01:39:29 - DEBUG - GET HISTORICAL PRICES - Converted successfully, exporting to csv ....
+25-Sep-20 01:39:29 - DEBUG - GET HISTORICAL PRICES - Data exported successfully!
+25-Sep-20 01:39:30 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 01:39:30 - DEBUG - GET HISTORICAL PRICES - completed successfully!
+25-Sep-20 01:39:35 - DEBUG - Starting new HTTPS connection (1): api.binance.com:443
+25-Sep-20 01:39:35 - DEBUG - https://api.binance.com:443 "GET /api/v1/ping HTTP/1.1" 200 2
+25-Sep-20 01:39:35 - DEBUG - GET HISTORICAL PRICES - starting job ...
+25-Sep-20 01:39:35 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 01:39:36 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 01:39:36 - DEBUG - GET HISTORICAL PRICES - Earliest valid timestamp is 08-17-2017 06:00:00
+25-Sep-20 01:39:36 - DEBUG - GET HISTORICAL PRICES - Fetching bars ...
+25-Sep-20 01:39:36 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 01:39:36 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1502942400000&symbol=BTCUSDT HTTP/1.1" 200 31029
+25-Sep-20 01:39:37 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1504767600000&symbol=BTCUSDT HTTP/1.1" 200 30932
+25-Sep-20 01:39:37 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1506567600000&symbol=BTCUSDT HTTP/1.1" 200 30909
+25-Sep-20 01:39:38 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1508367600000&symbol=BTCUSDT HTTP/1.1" 200 31641
+25-Sep-20 01:39:39 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1510167600000&symbol=BTCUSDT HTTP/1.1" 200 32523
+25-Sep-20 01:39:40 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1511967600000&symbol=BTCUSDT HTTP/1.1" 200 33444
+25-Sep-20 01:39:41 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1513767600000&symbol=BTCUSDT HTTP/1.1" 200 30241
+25-Sep-20 01:39:41 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1515571200000&symbol=BTCUSDT HTTP/1.1" 200 30257
+25-Sep-20 01:39:42 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1517371200000&symbol=BTCUSDT HTTP/1.1" 200 30487
+25-Sep-20 01:39:43 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1519286400000&symbol=BTCUSDT HTTP/1.1" 200 30146
+25-Sep-20 01:39:44 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1521086400000&symbol=BTCUSDT HTTP/1.1" 200 30035
+25-Sep-20 01:39:46 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1522886400000&symbol=BTCUSDT HTTP/1.1" 200 29743
+25-Sep-20 01:39:47 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1524686400000&symbol=BTCUSDT HTTP/1.1" 200 29877
+25-Sep-20 01:39:48 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1526486400000&symbol=BTCUSDT HTTP/1.1" 200 29699
+25-Sep-20 01:39:49 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1528286400000&symbol=BTCUSDT HTTP/1.1" 200 29813
+25-Sep-20 01:39:50 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1530126000000&symbol=BTCUSDT HTTP/1.1" 200 29751
+25-Sep-20 01:39:50 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1531951200000&symbol=BTCUSDT HTTP/1.1" 200 30037
+25-Sep-20 01:39:50 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1533751200000&symbol=BTCUSDT HTTP/1.1" 200 30026
+25-Sep-20 01:39:52 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1535551200000&symbol=BTCUSDT HTTP/1.1" 200 29794
+25-Sep-20 01:39:52 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1537351200000&symbol=BTCUSDT HTTP/1.1" 200 29449
+25-Sep-20 01:39:52 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1539151200000&symbol=BTCUSDT HTTP/1.1" 200 29081
+25-Sep-20 01:39:54 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1540962000000&symbol=BTCUSDT HTTP/1.1" 200 29224
+25-Sep-20 01:39:55 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1542787200000&symbol=BTCUSDT HTTP/1.1" 200 30247
+25-Sep-20 01:39:56 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1544587200000&symbol=BTCUSDT HTTP/1.1" 200 29872
+25-Sep-20 01:39:57 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1546387200000&symbol=BTCUSDT HTTP/1.1" 200 29339
+25-Sep-20 01:39:58 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1548187200000&symbol=BTCUSDT HTTP/1.1" 200 28971
+25-Sep-20 01:39:58 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1549987200000&symbol=BTCUSDT HTTP/1.1" 200 29443
+25-Sep-20 01:40:00 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1551787200000&symbol=BTCUSDT HTTP/1.1" 200 29147
+25-Sep-20 01:40:00 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1553608800000&symbol=BTCUSDT HTTP/1.1" 200 29738
+25-Sep-20 01:40:00 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1555408800000&symbol=BTCUSDT HTTP/1.1" 200 29628
+25-Sep-20 01:40:02 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1557208800000&symbol=BTCUSDT HTTP/1.1" 200 30653
+25-Sep-20 01:40:02 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1559044800000&symbol=BTCUSDT HTTP/1.1" 200 30430
+25-Sep-20 01:40:02 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1560844800000&symbol=BTCUSDT HTTP/1.1" 200 31272
+25-Sep-20 01:40:03 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1562644800000&symbol=BTCUSDT HTTP/1.1" 200 30969
+25-Sep-20 01:40:04 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1564444800000&symbol=BTCUSDT HTTP/1.1" 200 30643
+25-Sep-20 01:40:04 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1566273600000&symbol=BTCUSDT HTTP/1.1" 200 30431
+25-Sep-20 01:40:05 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1568073600000&symbol=BTCUSDT HTTP/1.1" 200 30352
+25-Sep-20 01:40:05 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1569873600000&symbol=BTCUSDT HTTP/1.1" 200 30104
+25-Sep-20 01:40:06 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1571673600000&symbol=BTCUSDT HTTP/1.1" 200 30622
+25-Sep-20 01:40:07 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1573473600000&symbol=BTCUSDT HTTP/1.1" 200 30530
+25-Sep-20 01:40:07 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1575288000000&symbol=BTCUSDT HTTP/1.1" 200 30119
+25-Sep-20 01:40:07 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1577088000000&symbol=BTCUSDT HTTP/1.1" 200 30278
+25-Sep-20 01:40:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1578888000000&symbol=BTCUSDT HTTP/1.1" 200 30486
+25-Sep-20 01:40:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1580688000000&symbol=BTCUSDT HTTP/1.1" 200 30613
+25-Sep-20 01:40:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1582509600000&symbol=BTCUSDT HTTP/1.1" 200 30890
+25-Sep-20 01:40:10 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1584313200000&symbol=BTCUSDT HTTP/1.1" 200 31070
+25-Sep-20 01:40:11 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1586113200000&symbol=BTCUSDT HTTP/1.1" 200 30507
+25-Sep-20 01:40:11 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1587920400000&symbol=BTCUSDT HTTP/1.1" 200 30993
+25-Sep-20 01:40:12 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1589720400000&symbol=BTCUSDT HTTP/1.1" 200 30525
+25-Sep-20 01:40:12 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1591520400000&symbol=BTCUSDT HTTP/1.1" 200 30309
+25-Sep-20 01:40:13 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1593331200000&symbol=BTCUSDT HTTP/1.1" 200 29902
+25-Sep-20 01:40:14 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1595131200000&symbol=BTCUSDT HTTP/1.1" 200 30638
+25-Sep-20 01:40:15 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1596931200000&symbol=BTCUSDT HTTP/1.1" 200 30605
+25-Sep-20 01:40:16 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1598731200000&symbol=BTCUSDT HTTP/1.1" 200 30753
+25-Sep-20 01:40:17 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1600531200000&symbol=BTCUSDT HTTP/1.1" 200 8001
+25-Sep-20 01:40:17 - DEBUG - GET HISTORICAL PRICES - Bars fetched successfully, converting to dataframe ...
+25-Sep-20 01:40:17 - DEBUG - GET HISTORICAL PRICES - Converted successfully, setting index ...
+25-Sep-20 01:40:17 - DEBUG - GET HISTORICAL PRICES - Index is set, converting index to human-readable date ...
+25-Sep-20 01:40:17 - DEBUG - GET HISTORICAL PRICES - Converted successfully, exporting to csv ....
+25-Sep-20 01:40:17 - DEBUG - GET HISTORICAL PRICES - Data exported successfully!
+25-Sep-20 01:40:17 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 01:40:17 - DEBUG - GET HISTORICAL PRICES - completed successfully!
+25-Sep-20 02:05:09 - DEBUG - GET HISTORICAL PRICES - starting job ...
+25-Sep-20 02:05:09 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 02:05:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 02:05:09 - DEBUG - GET HISTORICAL PRICES - Earliest valid timestamp is 08-17-2017 06:00:00
+25-Sep-20 02:05:09 - DEBUG - GET HISTORICAL PRICES - Fetching bars ...
+25-Sep-20 02:05:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 02:05:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1502942400000&symbol=BTCUSDT HTTP/1.1" 200 31029
+25-Sep-20 02:05:10 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1504767600000&symbol=BTCUSDT HTTP/1.1" 200 30932
+25-Sep-20 02:05:10 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1506567600000&symbol=BTCUSDT HTTP/1.1" 200 30909
+25-Sep-20 02:05:11 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1508367600000&symbol=BTCUSDT HTTP/1.1" 200 31641
+25-Sep-20 02:05:12 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1510167600000&symbol=BTCUSDT HTTP/1.1" 200 32523
+25-Sep-20 02:05:12 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1511967600000&symbol=BTCUSDT HTTP/1.1" 200 33444
+25-Sep-20 02:05:13 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1513767600000&symbol=BTCUSDT HTTP/1.1" 200 30241
+25-Sep-20 02:05:14 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1515571200000&symbol=BTCUSDT HTTP/1.1" 200 30257
+25-Sep-20 02:05:15 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1517371200000&symbol=BTCUSDT HTTP/1.1" 200 30487
+25-Sep-20 02:05:16 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1519286400000&symbol=BTCUSDT HTTP/1.1" 200 30146
+25-Sep-20 02:05:17 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1521086400000&symbol=BTCUSDT HTTP/1.1" 200 30035
+25-Sep-20 02:05:18 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1522886400000&symbol=BTCUSDT HTTP/1.1" 200 29743
+25-Sep-20 02:05:19 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1524686400000&symbol=BTCUSDT HTTP/1.1" 200 29877
+25-Sep-20 02:05:20 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1526486400000&symbol=BTCUSDT HTTP/1.1" 200 29699
+25-Sep-20 02:05:21 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1528286400000&symbol=BTCUSDT HTTP/1.1" 200 29813
+25-Sep-20 02:05:23 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1530126000000&symbol=BTCUSDT HTTP/1.1" 200 29751
+25-Sep-20 02:05:23 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1531951200000&symbol=BTCUSDT HTTP/1.1" 200 30037
+25-Sep-20 02:05:23 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1533751200000&symbol=BTCUSDT HTTP/1.1" 200 30026
+25-Sep-20 02:05:24 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1535551200000&symbol=BTCUSDT HTTP/1.1" 200 29794
+25-Sep-20 02:05:25 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1537351200000&symbol=BTCUSDT HTTP/1.1" 200 29449
+25-Sep-20 02:05:25 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1539151200000&symbol=BTCUSDT HTTP/1.1" 200 29081
+25-Sep-20 02:05:27 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1540962000000&symbol=BTCUSDT HTTP/1.1" 200 29224
+25-Sep-20 02:05:27 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1542787200000&symbol=BTCUSDT HTTP/1.1" 200 30247
+25-Sep-20 02:05:28 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1544587200000&symbol=BTCUSDT HTTP/1.1" 200 29872
+25-Sep-20 02:05:29 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1546387200000&symbol=BTCUSDT HTTP/1.1" 200 29339
+25-Sep-20 02:05:29 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1548187200000&symbol=BTCUSDT HTTP/1.1" 200 28971
+25-Sep-20 02:05:30 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1549987200000&symbol=BTCUSDT HTTP/1.1" 200 29443
+25-Sep-20 02:05:31 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1551787200000&symbol=BTCUSDT HTTP/1.1" 200 29147
+25-Sep-20 02:05:31 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1553608800000&symbol=BTCUSDT HTTP/1.1" 200 29738
+25-Sep-20 02:05:31 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1555408800000&symbol=BTCUSDT HTTP/1.1" 200 29628
+25-Sep-20 02:05:33 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1557208800000&symbol=BTCUSDT HTTP/1.1" 200 30653
+25-Sep-20 02:05:33 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1559044800000&symbol=BTCUSDT HTTP/1.1" 200 30430
+25-Sep-20 02:05:33 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1560844800000&symbol=BTCUSDT HTTP/1.1" 200 31272
+25-Sep-20 02:07:00 - DEBUG - GET HISTORICAL PRICES - starting job ...
+25-Sep-20 02:07:00 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 02:07:00 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 02:07:00 - DEBUG - GET HISTORICAL PRICES - Earliest valid timestamp is 08-17-2017 06:00:00
+25-Sep-20 02:07:00 - DEBUG - GET HISTORICAL PRICES - Fetching bars ...
+25-Sep-20 02:07:01 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=1&startTime=0&symbol=BTCUSDT HTTP/1.1" 200 179
+25-Sep-20 02:07:01 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1502942400000&symbol=BTCUSDT HTTP/1.1" 200 31029
+25-Sep-20 02:07:01 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1504767600000&symbol=BTCUSDT HTTP/1.1" 200 30932
+25-Sep-20 02:07:01 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1506567600000&symbol=BTCUSDT HTTP/1.1" 200 30909
+25-Sep-20 02:07:03 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1508367600000&symbol=BTCUSDT HTTP/1.1" 200 31641
+25-Sep-20 02:07:03 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1510167600000&symbol=BTCUSDT HTTP/1.1" 200 32523
+25-Sep-20 02:07:04 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1511967600000&symbol=BTCUSDT HTTP/1.1" 200 33444
+25-Sep-20 02:07:05 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1513767600000&symbol=BTCUSDT HTTP/1.1" 200 30241
+25-Sep-20 02:07:06 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1515571200000&symbol=BTCUSDT HTTP/1.1" 200 30257
+25-Sep-20 02:07:06 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1517371200000&symbol=BTCUSDT HTTP/1.1" 200 30487
+25-Sep-20 02:07:08 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1519286400000&symbol=BTCUSDT HTTP/1.1" 200 30146
+25-Sep-20 02:07:08 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1521086400000&symbol=BTCUSDT HTTP/1.1" 200 30035
+25-Sep-20 02:07:09 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1522886400000&symbol=BTCUSDT HTTP/1.1" 200 29743
+25-Sep-20 02:07:11 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1524686400000&symbol=BTCUSDT HTTP/1.1" 200 29877
+25-Sep-20 02:07:12 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1526486400000&symbol=BTCUSDT HTTP/1.1" 200 29699
+25-Sep-20 02:07:13 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1528286400000&symbol=BTCUSDT HTTP/1.1" 200 29813
+25-Sep-20 02:07:15 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1530126000000&symbol=BTCUSDT HTTP/1.1" 200 29751
+25-Sep-20 02:07:16 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1531951200000&symbol=BTCUSDT HTTP/1.1" 200 30037
+25-Sep-20 02:07:16 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1533751200000&symbol=BTCUSDT HTTP/1.1" 200 30026
+25-Sep-20 02:07:18 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1535551200000&symbol=BTCUSDT HTTP/1.1" 200 29794
+25-Sep-20 02:07:18 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1537351200000&symbol=BTCUSDT HTTP/1.1" 200 29449
+25-Sep-20 02:07:18 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1539151200000&symbol=BTCUSDT HTTP/1.1" 200 29081
+25-Sep-20 02:07:19 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1540962000000&symbol=BTCUSDT HTTP/1.1" 200 29224
+25-Sep-20 02:07:20 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1542787200000&symbol=BTCUSDT HTTP/1.1" 200 30247
+25-Sep-20 02:07:20 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1544587200000&symbol=BTCUSDT HTTP/1.1" 200 29872
+25-Sep-20 02:07:21 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1546387200000&symbol=BTCUSDT HTTP/1.1" 200 29339
+25-Sep-20 02:07:21 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1548187200000&symbol=BTCUSDT HTTP/1.1" 200 28971
+25-Sep-20 02:07:22 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1549987200000&symbol=BTCUSDT HTTP/1.1" 200 29443
+25-Sep-20 02:07:23 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1551787200000&symbol=BTCUSDT HTTP/1.1" 200 29147
+25-Sep-20 02:07:23 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1553608800000&symbol=BTCUSDT HTTP/1.1" 200 29738
+25-Sep-20 02:07:23 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1555408800000&symbol=BTCUSDT HTTP/1.1" 200 29628
+25-Sep-20 02:07:25 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1557208800000&symbol=BTCUSDT HTTP/1.1" 200 30653
+25-Sep-20 02:07:25 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1559044800000&symbol=BTCUSDT HTTP/1.1" 200 30430
+25-Sep-20 02:07:25 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1560844800000&symbol=BTCUSDT HTTP/1.1" 200 31272
+25-Sep-20 02:07:26 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1562644800000&symbol=BTCUSDT HTTP/1.1" 200 30969
+25-Sep-20 02:07:27 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1564444800000&symbol=BTCUSDT HTTP/1.1" 200 30643
+25-Sep-20 02:07:27 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1566273600000&symbol=BTCUSDT HTTP/1.1" 200 30431
+25-Sep-20 02:07:28 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1568073600000&symbol=BTCUSDT HTTP/1.1" 200 30352
+25-Sep-20 02:07:28 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1569873600000&symbol=BTCUSDT HTTP/1.1" 200 30104
+25-Sep-20 02:07:29 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1571673600000&symbol=BTCUSDT HTTP/1.1" 200 30622
+25-Sep-20 02:07:30 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1573473600000&symbol=BTCUSDT HTTP/1.1" 200 30530
+25-Sep-20 02:07:31 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1575288000000&symbol=BTCUSDT HTTP/1.1" 200 30119
+25-Sep-20 02:07:31 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1577088000000&symbol=BTCUSDT HTTP/1.1" 200 30278
+25-Sep-20 02:07:32 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1578888000000&symbol=BTCUSDT HTTP/1.1" 200 30486
+25-Sep-20 02:07:33 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1580688000000&symbol=BTCUSDT HTTP/1.1" 200 30613
+25-Sep-20 02:07:34 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1582509600000&symbol=BTCUSDT HTTP/1.1" 200 30890
+25-Sep-20 02:07:36 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1584313200000&symbol=BTCUSDT HTTP/1.1" 200 31070
+25-Sep-20 02:07:36 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1586113200000&symbol=BTCUSDT HTTP/1.1" 200 30507
+25-Sep-20 02:07:37 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1587920400000&symbol=BTCUSDT HTTP/1.1" 200 30993
+25-Sep-20 02:07:38 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1589720400000&symbol=BTCUSDT HTTP/1.1" 200 30525
+25-Sep-20 02:07:39 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1591520400000&symbol=BTCUSDT HTTP/1.1" 200 30309
+25-Sep-20 02:07:39 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1593331200000&symbol=BTCUSDT HTTP/1.1" 200 29902
+25-Sep-20 02:07:40 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1595131200000&symbol=BTCUSDT HTTP/1.1" 200 30638
+25-Sep-20 02:07:41 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1596931200000&symbol=BTCUSDT HTTP/1.1" 200 30605
+25-Sep-20 02:07:41 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1598731200000&symbol=BTCUSDT HTTP/1.1" 200 30753
+25-Sep-20 02:07:43 - DEBUG - https://api.binance.com:443 "GET /api/v1/klines?interval=1h&limit=500&startTime=1600531200000&symbol=BTCUSDT HTTP/1.1" 200 8061
+25-Sep-20 02:07:43 - DEBUG - GET HISTORICAL PRICES - Bars fetched successfully, converting to dataframe ...
+25-Sep-20 02:07:43 - DEBUG - GET HISTORICAL PRICES - Converted successfully, setting index ...
+25-Sep-20 02:07:43 - DEBUG - GET HISTORICAL PRICES - Index is set, converting index to human-readable date ...
+25-Sep-20 02:07:43 - DEBUG - GET HISTORICAL PRICES - Converted successfully, exporting to csv ....
+25-Sep-20 02:07:43 - DEBUG - GET HISTORICAL PRICES - Data exported successfully!
+25-Sep-20 02:07:43 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 02:07:43 - DEBUG - GET HISTORICAL PRICES - completed successfully!
+25-Sep-20 16:07:06 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:07:06 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:07:06 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:07:06 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:07:13 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:07:13 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:08:15 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:08:15 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:08:15 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:08:15 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:08:22 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:08:22 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:09:06 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:09:06 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:09:06 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:09:06 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:09:13 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:09:13 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:09:13 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:09:13 - ERROR - FORMAT INPUT - exception occurred!
+Traceback (most recent call last):
+  File "D:\Documents\Projects\Trading\AI_Freak\src\getHistory.py", line 140, in format_input
+    print('x_array shape : '+x_array.shape, 'y_array shape : '+y_array.shape,)
+TypeError: can only concatenate str (not "tuple") to str
+25-Sep-20 16:09:31 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:09:31 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:09:31 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:09:31 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:09:38 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:09:38 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:10:14 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:10:14 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:10:14 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:10:14 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:10:22 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:10:22 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:32:05 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:32:05 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:32:05 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:32:05 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:32:12 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:32:12 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:34:21 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:34:21 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:34:21 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:34:21 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:34:27 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:34:27 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:42:54 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:42:54 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:42:54 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:42:55 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:43:02 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:43:02 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:45:18 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:45:18 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:45:18 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:45:18 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:45:25 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:45:25 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:47:57 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:47:57 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:47:57 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:47:57 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:48:07 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:48:07 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:49:39 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:49:39 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:49:39 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:49:39 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:49:47 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:49:47 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:50:35 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:50:35 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:50:35 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:50:35 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:50:44 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:50:44 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:51:53 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:51:53 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:51:53 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:51:53 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:52:01 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:52:01 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 16:59:24 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 16:59:24 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 16:59:24 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 16:59:24 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 16:59:31 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 16:59:31 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:01:19 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:01:19 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:01:19 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:01:19 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:01:25 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:01:25 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:02:15 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:02:15 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:02:15 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:02:15 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:02:22 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:02:22 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:04:24 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:04:24 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:04:24 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:04:24 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:04:32 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:04:32 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:04:58 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:04:58 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:04:58 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:04:58 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:05:04 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:05:04 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:07:53 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:07:53 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:07:53 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:07:53 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:08:00 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:08:00 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:08:40 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:08:40 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:08:40 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:08:40 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:08:46 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:08:46 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:15:44 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:15:44 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:15:44 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:15:44 - DEBUG - FORMAT INPUT - Data imported successfully, normalizing dataframe ...
+25-Sep-20 17:15:44 - DEBUG - FORMAT INPUT - Data normalized successfully, flattening dataframe ...
+25-Sep-20 17:15:51 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:15:51 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:18:21 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:18:21 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:18:21 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:18:21 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:19:48 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:19:48 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:19:48 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:19:48 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:23:59 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:23:59 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:23:59 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:24:00 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:24:01 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:24:01 - ERROR - FORMAT INPUT - exception occurred!
+Traceback (most recent call last):
+  File "D:\Documents\Projects\Trading\AI_Freak\src\dataPrep.py", line 142, in format_input
+    y_array.append((df_slice.iloc[i+1,:].values[0] - mean)/std)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1761, in __getitem__
+    return self._getitem_tuple(key)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 2066, in _getitem_tuple
+    self._has_valid_tuple(tup)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 702, in _has_valid_tuple
+    self._validate_key(k, i)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1993, in _validate_key
+    self._validate_integer(key, axis)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 2062, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+25-Sep-20 17:25:44 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:25:44 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:25:44 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:25:44 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:25:45 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:25:45 - ERROR - FORMAT INPUT - exception occurred!
+Traceback (most recent call last):
+  File "D:\Documents\Projects\Trading\AI_Freak\src\dataPrep.py", line 142, in format_input
+    y_array.append((df_slice.iloc[i+1,:].values[0] - mean)/std)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1761, in __getitem__
+    return self._getitem_tuple(key)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 2066, in _getitem_tuple
+    self._has_valid_tuple(tup)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 702, in _has_valid_tuple
+    self._validate_key(k, i)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1993, in _validate_key
+    self._validate_integer(key, axis)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 2062, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+25-Sep-20 17:26:17 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:26:17 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:26:17 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:26:17 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:26:17 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:26:17 - ERROR - FORMAT INPUT - exception occurred!
+Traceback (most recent call last):
+  File "D:\Documents\Projects\Trading\AI_Freak\src\dataPrep.py", line 142, in format_input
+    y_array.append((df_slice.iloc[i+1,:].values[0]))
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1761, in __getitem__
+    return self._getitem_tuple(key)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 2066, in _getitem_tuple
+    self._has_valid_tuple(tup)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 702, in _has_valid_tuple
+    self._validate_key(k, i)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1993, in _validate_key
+    self._validate_integer(key, axis)
+  File "C:\Users\Alexandre Bremard\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 2062, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+25-Sep-20 17:27:05 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:27:05 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:27:05 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:27:05 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:28:12 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:28:12 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:28:12 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:28:12 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:32:26 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:32:26 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:32:26 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:32:26 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:32:58 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:32:58 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:37:06 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:37:06 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:37:06 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:37:06 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:37:40 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:37:41 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
+25-Sep-20 17:39:27 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:39:27 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:39:27 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:39:27 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:40:02 - DEBUG - FORMAT INPUT - starting job ...
+25-Sep-20 17:40:02 - DEBUG - -------------------------------------------------------------------------------------
+25-Sep-20 17:40:02 - DEBUG - FORMAT INPUT - Reading csv ...
+25-Sep-20 17:40:02 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe ...
+25-Sep-20 17:40:44 - DEBUG - FORMAT INPUT - Dataframe flattened successfully, converting to numpy object ...
+25-Sep-20 17:40:44 - DEBUG - FORMAT INPUT - Data imported successfully, flattening dataframe!
